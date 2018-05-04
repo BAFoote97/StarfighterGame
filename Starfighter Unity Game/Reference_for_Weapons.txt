@@ -1,0 +1,12 @@
+Beam Weapon Types (All energy based)
+Standard-Simple projectile laser (single shot or automatic).
+
+Hold Charge-Hold fire button to increase power of weapon.
+
+Auto Charge-Weapon charges on its own between fire.
+
+
+Missile Weapon Types
+
+Bomb Weapon Types
+

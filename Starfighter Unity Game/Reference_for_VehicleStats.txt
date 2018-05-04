@@ -1,0 +1,8 @@
+Maneuver Stats
+Pitch
+Yaw
+Roll
+Top speed
+Acceleration
+Shield-
+Hull-HP that is drained when hit while shield is at 0 or by projectile attacks(except for shields that defend against projectiles)

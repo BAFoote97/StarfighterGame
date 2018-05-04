@@ -1,0 +1,54 @@
+AI Values
+Yaw-Value increases size of yaw field. Increases based on yaw stat of vehicle.
+
+Stamina-Value points that lets AI perform specific actions (maneuvers, intercept targets, etc.)
+
+Doggedness-Value points that lowers as AI chases after target. When doggedness points are spent, stamina is used instead. Increases when AI is not attacking.
+
+Evasive-Value points with single cost when using a maneuver to evade. When evasive points are spent, stamina is used instead. Increases when AI is not evading.
+
+Support-Value points with single cost when following command. Cannot follow command when support value is at 0. Increases when AI is not following command.
+
+Distract-Value points checked for when AI uses Distract action on enemy AI target. If distract > or = to enemy target's focus value, distract succeeds. If distract value < to enemy target's focus value, distract fails.
+
+Focus-Value points checked for when enemy AI uses distract action on AI. See Distract value for details.
+
+Terrain-Value points modify maneuverability to avoid terrain. Specific AI (Aces, Important characters, etc.) will have max terrain value.
+
+Weapon warmup-Value points that increase frequency of weapon use and decrease default cooldown. (Weapons with expensive ammo will have higher default cooldown)
+
+AI Actions
+Idle-Period in which AI stops attacking or evading. Stamina, doggedness, evasive, and support points replenish during this period. Idle is forced if stamina value hits 0. Idle period ends when stamina is replenished up to minimal value set for AI.
+
+Formation-AI follows a specific target (player, defense target, etc.). Stamina, doggedness, evasive, and support points increase more quickly.
+
+Formation assist-AI follows and specific target while attack target's target. When outside of target's range, ceases attack and returns to formation. No cost of points.
+
+Blitz-AI concentrates attacks on multiple targets in vicinity of original target and switches between targets. Doggedness value is temporarily increased. Cancels out if all targets survive for time as stamina ends.
+
+Guard-AI only attacks targets in vicinty of defense target that threatens defense target (including missiles).
+
+Taunt-AI tries to attract attention of enemy AI targets. Taunt cancels out when stamina hits 0. If AI targets exceed taunt effect stat mod, distract value decreases for subsequent taunt targets by 0.25 for each target.
+
+Evade-AI performs maneuvers to avoid enemy or projectile if evade requirements are met. 
+
+Snipe-AI moves to far away distance from specific target and fires long range weapon.
+
+
+AI Stat Mods
+Skill-Use of skill-Starting-Lvl 1 mod-Lvl 2 mod-Lvl 3 mod-Lvl 4 mod-Lvl 5 mod-Lvl 6 mod-Lvl 7 mod-Lvl 8 mod-Lvl 9 mod-Lvl 10 mod
+Blitz range-Increases distance from 
+Blitz focus-Increases doggedness during blitz-0.0-0.1-0.2-0.3-0.4-0.5-0.6-0.7-0.8-0.9-1
+Distract bonus-Increses distract value-
+Taunt effect-Increases AI target limit when using taunt before distract value decreases-
+Protector
+
+Trigger AI Target (Different triggers may be disabled for certain AI)
+-Blitz
+-Snipe
+
+Trigger AI Evade (Different triggers may be disabled for certain AI)
+-Is in enemy target's reticle (establish distance before trigger).
+-Is being chased by homing projectile.
+-Is locked on by enemy target (establish distance before trigger).
+-
