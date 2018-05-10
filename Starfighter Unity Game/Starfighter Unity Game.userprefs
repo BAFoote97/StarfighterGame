@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Weapon_Use_Scripts\PlayerMissileLauncher.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Projectile_Scripts\BulletScript.cs">
     <Files>
       <File FileName="Assets\Scripts\UI_Scripts\MarkerScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Player_Scripts\Control_Scripts\TargettingScript.cs" Line="55" Column="25" />
-      <File FileName="Assets\Scripts\Weapon_Use_Scripts\PlayerMissileLauncher.cs" Line="10" Column="18" />
+      <File FileName="Assets\Scripts\Weapon_Use_Scripts\PlayerMissileLauncher.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Weapon_Use_Scripts\PlayerPrimaryLaserScript.cs" Line="116" Column="58" />
-      <File FileName="Assets\Scripts\Projectile_Scripts\MissileScript.cs" Line="10" Column="33" />
-      <File FileName="Assets\Scripts\Player_Scripts\Control_Scripts\CameraFollow.cs" Line="53" Column="4" />
+      <File FileName="Assets\Scripts\Projectile_Scripts\MissileScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player_Scripts\Control_Scripts\CameraFollow.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Player_Scripts\Control_Scripts\Player_Control.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Player_Scripts\Control_Scripts\PlayerStatsScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\UI_Scripts\Speedometer_Script.cs" Line="1" Column="1" />
