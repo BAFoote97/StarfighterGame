@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerPrimaryLaserScript : MonoBehaviour {
 
+	public GameObject playerObject;
+
 	public float bulletLifetime = 1.0f;
 	public GameObject Bullet;
 	public GameObject bulletEmitter1;
@@ -84,7 +86,7 @@ public class PlayerPrimaryLaserScript : MonoBehaviour {
 
 
 
-		gameObject.GetComponent<PlayerStatsScript> ().laserHeatValue = laserHeat;
+		playerObject.GetComponent<PlayerStatsScript> ().laserHeatValue = laserHeat;
 
 		if (laserHeat >= maxLaserHeat&&canShoot==true) 
 		{

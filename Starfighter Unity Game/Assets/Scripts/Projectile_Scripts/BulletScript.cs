@@ -30,8 +30,7 @@ public class BulletScript : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (canPassThru == false) {
-
+		
 			if (other.gameObject.tag == "ColObject") {
 //				Debug.Log ("Bullet hit");
 //			bulletDestroySFX.PlayOneShot (bulletDestroySFX.clip);
@@ -51,6 +50,24 @@ public class BulletScript : MonoBehaviour {
 				Destroy (this.gameObject, 0.2f);
 				Destroy (FX_Handler, explosionTime);
 			}
+		if (other.gameObject.tag == "Team2Player") {
+			//				Debug.Log ("Bullet hit");
+			//			bulletDestroySFX.PlayOneShot (bulletDestroySFX.clip);
+			//Projectile.GetComponent<MeshRenderer> ().enabled = false;
+			Destroy (bulletFire);
+			Destroy (Projectile);
+			Destroy (hitBox);
+
+
+			//this.bulletDestroySFX.GetComponent<BoxCollider> ().enabled = false;
+
+			GameObject FX_Handler;
+
+
+			FX_Handler = Instantiate (explosionFX, explosionArea.transform.position, explosionArea.transform.rotation) as GameObject;
+
+			Destroy (this.gameObject, 0.2f);
+			Destroy (FX_Handler, explosionTime);
 		}
 	}
 }

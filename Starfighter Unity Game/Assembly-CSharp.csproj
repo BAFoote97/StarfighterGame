@@ -52,7 +52,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\RandomAreaSpawner\RandomAreaSpawner.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\AI_Weapon_Scripts\AILaserScript.cs" />
      <Compile Include="Assets\Scripts\AI_Scripts\BasicAI.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\LockOnMeScript.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Team2LockOnMe.cs" />
      <Compile Include="Assets\Scripts\Player_Scripts\Control_Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Player_Scripts\Control_Scripts\CameraSwitchScript.cs" />
      <Compile Include="Assets\Scripts\Player_Scripts\Control_Scripts\Player_Control.cs" />

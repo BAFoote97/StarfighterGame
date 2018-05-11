@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class PlayerMissileLauncher : MonoBehaviour {
 
+	public GameObject playerObject;
+
+
 	public List <GameObject> targets = new List<GameObject> ();
 
 	public Transform lockedTarget;
@@ -34,10 +37,12 @@ public class PlayerMissileLauncher : MonoBehaviour {
 	void Start () {
 		
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		lockedTarget = transform.GetComponent<TargettingScript> ().currentTarget;
+		lockedTarget = playerObject.GetComponent<TargettingScript> ().currentTarget;
+
+		Bullet.GetComponent<MissileScript> ().seekTarget = lockedTarget;
 
 		if (Input.GetMouseButtonDown (2)) 
 		{

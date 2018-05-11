@@ -6,6 +6,14 @@ public class TargettingScript : MonoBehaviour {
 
 	public Transform currentTarget;
 	public Transform nextTarget;
+	public Transform nextHostile;
+
+	public GameObject coneCollision;
+
+//	public Transform shipObject;
+//	public float dotProd;
+//	public Vector3 shipDirection;
+//	public Vector3 targetPos;
 
 	//public KeyCode RClick;
 
@@ -21,6 +29,7 @@ public class TargettingScript : MonoBehaviour {
 	Vector3 defaultCamPosition = new Vector3 (0f,0f,0);
 
 	public bool canLookAtTarget;
+	public float camRotSpeed;
 
 	public Camera cam;
 
@@ -47,6 +56,11 @@ public class TargettingScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+//		shipDirection = shipObject.transform.forward;
+//		targetPos = currentTarget.forward;
+//
+//		dotProd = Vector3.Dot (shipDirection, targetPos);
+
 		currentX += Input.GetAxis ("Mouse X");
 		currentY += Input.GetAxis ("Mouse Y");
 
@@ -64,6 +78,7 @@ public class TargettingScript : MonoBehaviour {
 
 
 		if (Input.GetMouseButton (1)) {
+//			lookAtDef.rotation = Quaternion.Slerp (lookAtDef.rotation, Quaternion.LookRotation (currentTarget.transform.position - lookAtDef.position), camRotSpeed * Time.deltaTime);
 			camTransform.transform.LookAt(currentTarget);
 //			StartCoroutine(CamsLookAtTarget());
 
