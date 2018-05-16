@@ -47,6 +47,7 @@ public class MissileScript : MonoBehaviour {
 			lockedOnTarget = false;
 		}
 
+
 		if (lockedOnTarget == true)
 		{
 			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (seekTarget.transform.position - transform.position), turnSensitivity * Time.deltaTime);
@@ -110,13 +111,13 @@ public class MissileScript : MonoBehaviour {
 
 			//this.bulletDestroySFX.GetComponent<BoxCollider> ().enabled = false;
 
-			GameObject FX_Handler;
+//			GameObject FX_Handler;
 
 
-			FX_Handler = Instantiate (explosionFX, explosionArea.transform.position, explosionArea.transform.rotation) as GameObject;
+//			FX_Handler = Instantiate (explosionFX, explosionArea.transform.position, explosionArea.transform.rotation) as GameObject;
 
-			Destroy (this.gameObject, 0.2f);
-			Destroy (FX_Handler, explosionTime);
+			Destroy (this.gameObject, 0f);
+//			Destroy (FX_Handler, explosionTime);
 		}
 	}
 
